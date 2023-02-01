@@ -31,6 +31,6 @@ public class MatrixServiceImpl extends MatrixServiceImplBase
 		int C11=request.getA11()+request.getB11();
         MatrixReply response = MatrixReply.newBuilder().setC00(C00).setC01(C01).setC10(C10).setC11(C11).build();
         reply.onNext(response);
-        reply.onCompleted();
+        reply.onCompleted(); 
     }
 }
